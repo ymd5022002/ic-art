@@ -20,9 +20,9 @@ function loadFunc() {
         for( var i = 0; i < windowSize ; i++ ) {
             ctx.fillStyle = colorCode[ Math.floor( i * j * 10 + toneNumber　*　phase /100 ) % toneNumber ]; 
             ctx.fillRect(x, y, pixelWidth, pixelHeight );
-            ctx.fillRect(windowSize-1-x, y, pixelWidth, pixelHeight );
-            ctx.fillRect(x, windowSize-1-y, pixelWidth, pixelHeight );
-            ctx.fillRect(windowSize-1-x, windowSize-1-y, pixelWidth, pixelHeight );         
+            ctx.fillRect(2*windowSize-1-x, y, pixelWidth, pixelHeight );
+            ctx.fillRect(x, 2*windowSize-1-y, pixelWidth, pixelHeight );
+            ctx.fillRect(2*windowSize-1-x, 2*windowSize-1-y, pixelWidth, pixelHeight );         
          x += pixelWidth;  
         }
         x = 0;
